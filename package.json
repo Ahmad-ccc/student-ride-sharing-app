@@ -2,7 +2,14 @@
   "name": "ride-sharing-app",
   "version": "1.0.0",
   "scripts": {
-    "test": "jest --config jest.config.json"
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testMatch": ["**/*.test.ts"],
+    "collectCoverage": true,
+    "coverageDirectory": "coverage"
   },
   "devDependencies": {
     "jest": "^29.0.0",
